@@ -14,14 +14,12 @@ html, body {
 .button {
     margin: auto;
 }
-
 .tagline {
     text-align: center;
     margin-top: -280px;
     color: grey;
     font-size: 10px;
 }
-
 #btn-mail {
     height: 60px;
     width: 260px;
@@ -39,6 +37,11 @@ html, body {
     animation-play-state: paused;
 }
 
+#btn-mail:hover {
+    background: #A22372;
+    transition: all 0.2s ease-in;
+}
+
 #btn-valid {
     height: 60px;
     width: 60px;
@@ -53,12 +56,15 @@ html, body {
     outline: none;
     position: absolute;
     margin-left: 200px;
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
     animation: checker 0.4s ease-in-out forwards;
     animation-play-state: paused;
     display: none;
 }
-
-
 #txt-mail {
     height: 60px;
     width: 260px;
@@ -72,18 +78,20 @@ html, body {
     padding-right: 80px;
     color: grey;
 }
-
 @keyframes slide {
-  to {
-    width: 60px;
-    margin-left: 200px;
-  }
+    to {
+        width: 60px;
+        margin-left: 200px;
+    }
 }
-
 @keyframes checker {
-  to {
-    width: 60px;
-    margin-left: 0px;
-    background: #3FC380;
-  }
+    to {
+        margin-left: 0px;
+        background: #3FC380;
+        -ms-transform: rotate(360deg);
+        /* IE 9 */
+        -webkit-transform: rotate(360deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(360deg);
+    }
 }
