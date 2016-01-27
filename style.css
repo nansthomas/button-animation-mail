@@ -1,0 +1,89 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #E4E4E4;
+    font-family: 'Open Sans', sans-serif;
+}
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button {
+    margin: auto;
+}
+
+.tagline {
+    text-align: center;
+    margin-top: -280px;
+    color: grey;
+    font-size: 10px;
+}
+
+#btn-mail {
+    height: 60px;
+    width: 260px;
+    border: none;
+    border-radius: 45px;
+    background: #82195A;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    animation: slide 0.4s ease-in-out forwards;
+    animation-play-state: paused;
+}
+
+#btn-valid {
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 45px;
+    background: #82195A;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    margin-left: 200px;
+    animation: checker 0.4s ease-in-out forwards;
+    animation-play-state: paused;
+    display: none;
+}
+
+
+#txt-mail {
+    height: 60px;
+    width: 260px;
+    border: none;
+    border-radius: 45px;
+    background: white;
+    outline: none;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 0px;
+    padding-right: 80px;
+    color: grey;
+}
+
+@keyframes slide {
+  to {
+    width: 60px;
+    margin-left: 200px;
+  }
+}
+
+@keyframes checker {
+  to {
+    width: 60px;
+    margin-left: 0px;
+    background: #3FC380;
+  }
+}
